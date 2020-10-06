@@ -1,0 +1,43 @@
+.header {
+    line-height: 0;
+}
+
+.header .ncuhome {
+    margin-left: 16px;
+    color: #ffffff;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.header .title {
+    color: #ffffff;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 35px;
+}
+
+.header .avter {
+    margin-left: 1040px;
+    vertical-align: middle;
+}
+
+.header .name {
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+.header .exit {
+    vertical-align: middle;
+    width: 75px;
+    height: 28px;
+    margin: 14px 40px;
+    border: 1px solid #EC5E5E;
+    border-radius: 5px;
+    background: #FFFFFF;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #EC5E5E;
+}
