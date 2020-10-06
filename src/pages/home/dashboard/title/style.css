@@ -1,0 +1,9 @@
+.menu-container {
+    font-size: 15px;
+}
+
+.submenu-container {
+    min-width: 160px;
+    text-align: center;
+    font-size: 17px;
+}
