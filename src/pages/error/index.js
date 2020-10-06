@@ -13,7 +13,7 @@ const Error = () => {
       subTitle="Sorry, the page you visited does not exist."
       extra={
         <Button type="primary">
-          <Link to='/home'>
+          <Link to='/'>
             回到首页
           </Link>
         </Button>

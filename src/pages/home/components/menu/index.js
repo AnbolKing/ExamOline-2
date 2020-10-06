@@ -1,26 +1,21 @@
-import React from 'react';
+import React from "react";
+import { Layout, Menu } from "antd";
 import {
-  useHistory
-} from 'react-router-dom'
-import {
-  Layout,
-  Menu
-} from 'antd';
-import { 
   HomeOutlined,
   DiffOutlined,
   UnorderedListOutlined,
-  BarChartOutlined
-} from '@ant-design/icons';
+  BarChartOutlined,
+} from "@ant-design/icons";
+import { useHistory } from "react-router-dom";
 
 const { Sider } = Layout;
 
 const MenuBar = () => {
-  const history = useHistory();
+  const His = useHistory();
 
-  const handleMenu = (e) =>{
-    history.push(e.key)
-  }
+  const handleMenuClick = (e) => {
+    His.push(e.key);
+  };
 
   return (
     <Sider>
@@ -30,28 +25,28 @@ const MenuBar = () => {
         theme="dark"
       >
         <Menu.Item
-          onClick={handleMenu}
+          onClick={handleMenuClick}
           key="/home"
           icon={<HomeOutlined />}
         >
           首页
         </Menu.Item>
         <Menu.Item
-          onClick={handleMenu}
+          onClick={handleMenuClick}
           key="/home/title"
           icon={<DiffOutlined />}
         >
           题库管理
         </Menu.Item>
         <Menu.Item
-          onClick={handleMenu}
+          onClick={handleMenuClick}
           key="/home/exam"
           icon={<UnorderedListOutlined />}
         >
           考试管理
         </Menu.Item>
         <Menu.Item
-          onClick={handleMenu}
+          onClick={handleMenuClick}
           key="/home/analysis"
           icon={<BarChartOutlined />}
         >
@@ -59,7 +54,7 @@ const MenuBar = () => {
         </Menu.Item>
       </Menu>
     </Sider>
-  )
-}
+  );
+};
 
 export default MenuBar;

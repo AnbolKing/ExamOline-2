@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import ncuLogo from '../../../../assets/ncuhome-logo.png';
+// import userAvter from '../../../../assets/avter.png';
 import {
   Layout,
   Typography,

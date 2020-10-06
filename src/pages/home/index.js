@@ -1,30 +1,22 @@
-import React, { Suspense, lazy } from 'react';
-import {
-  Switch,
-  Route
-} from 'react-router-dom'
-import {
-  Layout,
-  Spin
-} from 'antd';
+import React, { Suspense, lazy } from "react";
+import { Route, Switch } from "react-router-dom";
+import { Layout, Spin } from "antd";
 
-// 引入Home组件
-import Header from './components/header/index';
-import MenuBar from './components/menu/index';
-import Content from './components/content/index';
-import Foot from './components/foot/index';
+import Header from "./components/header";
+import MenuBar from "./components/menu";
+import Content from "./components/content";
+import Foot from "./components/foot";
 
-//引入分页组件
-const Index = lazy(() => import("./dashboard/index/index"));
-const Title = lazy(() => import("./dashboard/title/index"));
-const Exam = lazy(() => import("./dashboard/exam/index"));
-const Analysis = lazy(() => import("./dashboard/analysis/index"));
+const Index = lazy(() => import("./dashboard/index"));
+const Title = lazy(() => import("./dashboard/title"));
+const Exam = lazy(() => import("./dashboard/exam"));
+const Analysis = lazy(() => import("./dashboard/analysis"));
 
 const Home = () => {
   return (
-    <Layout 
-      className="site-layout"
+    <Layout
       style={{ minHeight: "100vh", minWidth: "1600px" }}
+      className="site-layout"
     >
       <Header />
       <Layout>
@@ -33,10 +25,10 @@ const Home = () => {
           <Content>
             <Suspense fallback={<Spin />}>
               <Switch>
-                <Route exact path='/home' component={Index}/>
-                <Route exact path='/home/title' component={Title}/>
-                <Route exact path='/home/exam' component={Exam}/>
-                <Route exact path='/home/analysis' component={Analysis}/>
+                <Route exact path="/home" component={Index} />
+                <Route exact path="/home/title" component={Title} />
+                <Route exact path="/home/exam" component={Exam} />
+                <Route exact path="/home/analysis" component={Analysis} />
               </Switch>
             </Suspense>
           </Content>
@@ -44,7 +36,7 @@ const Home = () => {
         </Layout>
       </Layout>
     </Layout>
-  )
-}
+  );
+};
 
 export default Home;

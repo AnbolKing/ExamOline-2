@@ -6,7 +6,7 @@ const { Text } = Typography;
 
 const Foot = () => {
   return (
-    <LayoutFooter>
+    <LayoutFooter style={{textAlign:'center'}}>
       <Text>© 2020 家园工作室 Made by NCUHOME AnbolKing</Text>
     </LayoutFooter>
   );
