@@ -1,0 +1,66 @@
+.content-container {
+    margin: 20px 0;
+}
+
+
+/* 判断题CSS */
+
+.judge-container .check-container .ant-checkbox-group {
+    display: flex;
+    margin: 20px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.judge-container .check-container .ant-checkbox-group .ant-checkbox-wrapper {
+    margin-left: 0;
+}
+
+
+/* 选择题CSS */
+
+.choose-container .check-container .ant-checkbox-group {
+    display: flex;
+    margin: 20px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.choose-container .check-container .ant-checkbox-group .ant-checkbox-wrapper {
+    margin-left: 0;
+}
+
+.choose-container .check-container .check-item {
+    margin: 10px 0;
+}
+
+
+/* 作图题CSS */
+
+.picture-container .upload-container {
+    margin: 20px 0;
+}
+
+
+/* 问答题CSS */
+
+.question-container .textarea-container {
+    margin: 20px 0;
+}
+
+
+/* 填空题CSS */
+
+.blank-container .textarea-container {
+    margin: 10px 0;
+}
+
+.blank-container .answer-container .answer-item {
+    margin: 10px 0;
+}
+
+.blank-container .button-container {
+    margin: 10px 0;
+}

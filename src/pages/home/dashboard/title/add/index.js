@@ -12,6 +12,7 @@ import {
   DownOutlined
 } from '@ant-design/icons';
 import './style.css';
+import Content from './components/content.js';
 
 const AddTitle = () => {
   const classType = ['请选择组别','研发组','产品组','设计组','运营组','行政组'];
@@ -86,12 +87,13 @@ const AddTitle = () => {
               </Button>
             </Dropdown>
           </Col>
-          <Col span={6} offset={10}>
+          <Col span={6} offset={10} style={{display:'flex',alignItems:'center'}}>
             <Tag color="error">难度较高 8</Tag>
             <Tag color="processing">有点难度 13</Tag>
             <Tag color="success">还挺简单 20</Tag>
           </Col>
         </Row>
+        <Content classType={classIndex} titleType={titleIndex} />
       </Card>
     </div>
   )
