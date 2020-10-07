@@ -9,8 +9,33 @@ import loginLogo from '../../assets/login-log.png';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 
-class Login extends Component {  
+class Login extends Component { 
+  constructor(props) {
+    super(props);
+    this.state = {
+      username:'',
+      userpass:'',
+    }
+  }
+  
   render() {
+    const onFinish = (e) => {
+      console.log(e);
+      if(e.username!=='' && e.userpass!=='') {
+        this.setState({
+          username:e.username,
+          userpass:e.userpass,
+          isRemember:true
+        })
+      }
+      else {
+        this.setState({
+          username:e.username,
+          userpass:e.userpass,
+          isRemember:false,
+        })
+      }
+    }
     return (
       <div className="index-login">
         <div className="login-contain">
@@ -21,8 +46,8 @@ class Login extends Component {
             <Form
               className="login-form"
               name="login"
-              // onFinish={onFinish}
-              // onFinishFailed={onFinishFailed}
+              onFinish={onFinish}
+              //onFinishFailed={onFinishFailed}
             >
               <div className="input-box">
               <Form.Item

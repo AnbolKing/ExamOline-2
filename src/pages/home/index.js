@@ -26,9 +26,9 @@ const Home = () => {
             <Suspense fallback={<Spin />}>
               <Switch>
                 <Route exact path="/home" component={Index} />
-                <Route exact path="/home/title" component={Title} />
-                <Route exact path="/home/exam" component={Exam} />
-                <Route exact path="/home/analysis" component={Analysis} />
+                <Route path="/home/title" component={Title} />
+                <Route path="/home/exam" component={Exam} />
+                <Route path="/home/analysis" component={Analysis} />
               </Switch>
             </Suspense>
           </Content>
