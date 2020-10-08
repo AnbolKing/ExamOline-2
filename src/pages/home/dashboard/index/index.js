@@ -30,12 +30,12 @@ const Index = () => {
       <div className="index-header">
         <Row gutter={48}>
           <Col span={6}>
-            <Card hoverable title="添加题目" extra={<a href="/home">立即添加</a>}>
+            <Card hoverable title="添加题目" extra={<a href="/home/title/add">立即添加</a>}>
               <p>录入题目至题库，支持单个题目录入或从Excel导入</p>
             </Card>
           </Col>
           <Col span={6}>
-            <Card hoverable title="创建考试" extra={<a href="/home">立即创建</a>}>
+            <Card hoverable title="创建考试" extra={<a href="/home/exam/add">立即创建</a>}>
               <p>从题库抽取试题，创建试卷，并发布考试</p>
             </Card>
           </Col>

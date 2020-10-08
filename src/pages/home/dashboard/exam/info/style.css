@@ -1,0 +1,24 @@
+.info-container {
+    display: flex;
+}
+
+.info-container .info-paper {
+    width: 70%;
+    margin-right: 15px;
+}
+
+.info-container .info-user {
+    width: 30%;
+}
+
+.info-container .info-user .ant-descriptions-item-content {
+    font-size: 12px;
+}
+
+.info-container .info-user .ant-descriptions-row:last-child .ant-descriptions-item-content {
+    font-size: 15px;
+}
+
+.info-container .info-paper .paper-item .extra-container .item {
+    margin-right: 5px;
+}

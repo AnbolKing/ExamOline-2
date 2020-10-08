@@ -19,19 +19,19 @@ const Judge = () => {
       <div className="check-container">
         <Checkbox.Group>
           <div className="check-item">
-            <Checkbox value="correct">A</Checkbox>
+            <Checkbox value="A">A</Checkbox>
             <TextArea placeholder="请输入A选项内容" autoSize/>
           </div>
           <div className="check-item">
-            <Checkbox value="correct">B</Checkbox>
+            <Checkbox value="B">B</Checkbox>
             <TextArea placeholder="请输入B选项内容" autoSize/>
           </div>
           <div className="check-item">
-            <Checkbox value="correct">C</Checkbox>
+            <Checkbox value="C">C</Checkbox>
             <TextArea placeholder="请输入C选项内容" autoSize/>
           </div>
           <div className="check-item">
-            <Checkbox value="correct">D</Checkbox>
+            <Checkbox value="D">D</Checkbox>
             <TextArea placeholder="请输入D选项内容" autoSize/>
           </div>
         </Checkbox.Group>

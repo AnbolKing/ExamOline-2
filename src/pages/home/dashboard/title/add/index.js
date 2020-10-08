@@ -87,11 +87,15 @@ const AddTitle = () => {
               </Button>
             </Dropdown>
           </Col>
-          <Col span={6} offset={10} style={{display:'flex',alignItems:'center'}}>
-            <Tag color="error">难度较高 8</Tag>
-            <Tag color="processing">有点难度 13</Tag>
-            <Tag color="success">还挺简单 20</Tag>
-          </Col>
+          {
+            titleIndex===0||classIndex===0 ? null : (
+              <Col span={6} offset={10} style={{display:'flex',alignItems:'center'}}>
+                <Tag color="error">难度较高 8</Tag>
+                <Tag color="processing">有点难度 13</Tag>
+                <Tag color="success">还挺简单 20</Tag>
+              </Col>
+            )
+          }
         </Row>
         <Content classType={classIndex} titleType={titleIndex} />
       </Card>
